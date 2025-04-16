@@ -1,0 +1,291 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  background: #D1E9FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1 { font-size: clamp(3rem, 4vw, 4rem); padding-bottom: 1.5rem;}
+h2, h3 { font-size: clamp(1.5rem, 2vw, 3rem); padding-bottom: 1rem;}
+p { font-size: clamp(1rem, 1vw, 1.5rem); }
+
+.sidebar h1 { font-size: 1.7rem; }
+.sidebar nav ul,
+.sidebar-footer nav ul {
+  font-size: 1.4rem;
+}
+.sidebar p {
+  font-size: 1rem;
+}
+
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: none;
+  padding-bottom: 20px;
+}
+
+/* Sticky button */
+.sticky-button {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1000;
+}
+
+.sticky-button a {
+  color: #1C4727;
+  padding: .5rem 1.5rem;
+  border-radius: 24px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sticky-button a:hover {
+  background: lightseagreen;
+}
+
+/* Hero image */
+.image-section {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.section-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 4rem;
+  max-width: 900px;
+  color: #D1E9FF;
+}
+
+.section-title {
+  font-size: clamp(3rem, 4vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Content sections */
+.content-section {
+  color: #1C4727;
+  padding: 4rem;
+}
+
+.text-block {
+  max-width: 90%;
+  padding-bottom: 4rem;
+}
+
+.image-below {
+  width: 90%;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background image IDs */
+#agriturismo {
+  background-image: url('images/img-agriturismo.webp');
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-light {
+  background: #fff;
+  color: #000;
+}
+
+.btn-light:hover {
+  background: #ddd;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #D1E9FF;
+  color: #1C4727;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #1C4727;
+}
+
+.sidebar nav a {
+  color: #1C4727;
+  text-decoration: none;
+  margin: 1rem 0;
+  display: block;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar nav ul,
+.sidebar-footer nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 5%;
+  scroll-snap-align: start;
+  border-top: 1px solid #1C4727;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-item:nth-child(3) p {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Bottom Navigation */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content-section {
+    padding: 2rem 1rem;
+    width:100vw;
+  }
+
+  .section-overlay {
+    padding: 2rem 1rem;
+  }
+
+  .image-section {
+    height:auto;
+  }
+
+  .main-content {
+    margin-left: 0px;
+    width: calc(100% - 0px);
+  }
+
+  .text-block {
+    max-width:100%;
+  }
+
+  .image-below{
+    width:100%;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #D1E9FF;
+    border-top: 1px solid #1C4727;
+    padding: 1rem 0;
+    z-index: 1001;
+  }
+
+  .mobile-nav a {
+    color: #1C4727;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Overlay Menu */
+  .mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #D1E9FF;
+    z-index: 2000;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-menu-overlay.active {
+    display: flex;
+  }
+
+  .mobile-menu-overlay nav a {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #1C4727;
+  }
+
+  .mobile-menu-overlay .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
