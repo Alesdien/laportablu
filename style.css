@@ -121,7 +121,7 @@ p { font-size: clamp(1rem, 1vw, 1.5rem); }
 
 /* Background image IDs */
 #agriturismo {
-  background-image: url('images/img-agriturismo.webp');
+  background-image: url('assets/images/img-agriturismo.webp');
 }
 
 /* Button styling */
