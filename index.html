@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agriturismo la porta blu</title>
   <meta name="description" content="Book your farm stay with the pool in the countryside" />
+  <link rel="alternate" hreflang="it" href="https://laportablu.com/index.html" />
+  <link rel="alternate" hreflang="en" href="https://laportablu.com/index-en.html" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter+Tight:wght@400;500&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter+Tight:wght@400;500&display=swap"
+      rel="stylesheet">
+  </noscript>
 </head>
+
 <body>
-  <div class="sticky-button">
+  <div class="sticky-btn">
     <a href="#contact">Prenota</a>
   </div>
   <div class="container">
@@ -19,23 +29,28 @@
         </header>
         <nav>
           <ul>
-            <li><a href="#agriturismo">L'agriturismo</a></li>
+            <li><a href="#agriturismo">Agriturismo</a></li>
             <li><a href="#piscina">Giardino e piscina</a></li>
-            <li><a href="#stanze">Stanze e suite</a></li>
-            <li><a href="#area">L'Alta Val Tidone</a></li>
+            <li><a href="#stanze">Le nostre stanze</a></li>
+            <li><a href="#area">L'area della Val Tidone</a></li>
           </ul>
         </nav>
       </div>
-    
+
       <footer class="sidebar-footer">
+        <div class="language-switcher">
+          <a href="index.html" class="active" id="lang-it" onclick="setLanguage('it')">IT</a> |
+          <a href="index-en.html" id="lang-en" onclick="setLanguage('en')">EN</a>
+        </div>
         <p>Loc. Casa Forloni 1
           <br>Alta Val Tidone (PC)
           <br>44°57'47.5"N 9°23'20.5"E
           <br>info@portablu.com
-          <br>+39 390 490 9023</p>
+          <br>+39 390 490 9023
+        </p>
         <nav>
           <ul>
-            <li><a href="#privacy">Get directions</a></li>
+            <li><a href="#privacy">Come arrivare</a></li>
           </ul>
         </nav>
       </footer>
@@ -44,89 +59,171 @@
     <main class="main-content">
       <section class="image-section fullscreen" id="agriturismo">
         <div class="section-overlay">
-          <h2 class="section-title">It’s the way you feel when you watch the sun setting down over the hills</h2>
-          <p class="section-subtitle">La porta blu is a new agriturismo in Alta Val Tidone. Come visit to enjoy the breathtaking views of the surrounding hills, the amazing cucina piacentina and a serene stay relaxing in the pool and the garden.</p>
+          <header>
+            <h4>Agriturismo la porta blu</h4>
+          </header>
+          <h2 class="section-title">È il modo in cui ti senti al tramonto sulle colline</h2>
+          <p class="section-subtitle">La porta blu è un nuovo agriturismo in Alta Val Tidone.
+            Venite a trovarci per godere della vista mozzafiato sulle colline circostanti,
+            della sorprendente cucina piacentina e di un sereno soggiorno all'insegna del relax in piscina e in
+            giardino.</p>
           <a href="#piscina" class="scroll-down-btn">Scopri di più ↓</a>
         </div>
       </section>
-      
+
       <section class="content-section" id="piscina">
         <div class="text-block">
-          <h2>For people looking to relax and slow down. An hour from Milan.</h2>
-          <p>A serene retreat where nature and modern agriturismo harmonize. Tucked away in a breathtaking yet undiscovered landscape near the Tuscan hills—just an hour from Milan—La Porta Blu invites you to reconnect with nature. Thoughtfully restored, its architecture blends seamlessly with the land, creating a space where tranquility, renewal, and a deep bond with the natural world take center stage.</p>
+          <h2>Per chi vuole rilassarsi e rallentare. A un'ora da Milano.</h2>
+          <p>Un rifugio sereno dove natura e moderno agriturismo si armonizzano.
+            Nascosta in un paesaggio mozzafiato e ancora da scoprire, vicino alle colline toscane,
+            a solo un'ora da Milano, Porta Blu vi invita a riconnettervi con la natura.
+            Sapientemente restaurata, la sua architettura si fonde perfettamente con la terra,
+            creando uno spazio dove la tranquillità, il rinnovamento e il profondo legame con il mondo naturale sono al
+            centro dell'attenzione.</p>
         </div>
-        <div class="image-below" style="background-image: url('assets/images/img-piscina.webp')"></div>
+        <div class="image-below" style="background-image: url('images/img-piscina.webp')" loading="lazy"></div>
       </section>
-       
+
       <section class="content-section" id="stanze">
         <div class="text-block">
+          <h4>Le nostre stanze</h4>
           <h2>6 rooms that can accommodate up to 13 people</h2>
-          <p>Spread out over two floors surrounded by a garden and vineyard hills, the renovated building draws inspiration from the surrounding countryside and our relationship with nature. The large windows, private balconies and the plants covering the entire building all contribute to an experience of contemplation and reconnection with nature. During your stay you’ll have access to the entire 9-acre property of fields and woods, with the pool and garden. Activities, events, food, drinks, and events offered, such as yoga and concerts, are available for you.</p>
+          <p>Distribuito su due piani e circondato da un giardino e da colline di vigneti,
+            l'edificio ristrutturato trae ispirazione dalla campagna circostante
+            e dal nostro rapporto con la natura. Le grandi finestre, i balconi privati e le
+            piante che ricoprono l'intero edificio contribuiscono a creare un'esperienza di
+            contemplazione e di riconnessione con la natura. Durante il vostro soggiorno avrete accesso
+            all'intera proprietà di 9 acri di campi e boschi, con la piscina e il giardino.
+            Attività, eventi, cibo, bevande ed eventi proposti, come yoga e concerti, sono a vostra disposizione.</p>
         </div>
-        <div class="image-below" style="background-image: url('assets/images/img-stanze.webp')"></div>
+        <div class="image-below" style="background-image: url('images/img-stanze.webp')" loading="lazy"></div>
       </section>
 
       <section class="content-section" id="area">
         <div class="text-block">
-          <h2>Enjoy the breathtaking landscape in an area close to Tuscany full of history, trekking trails and wine tastings</h2>
-          <p>With its historic villages and unspoiled natural landscapes, Alta Val Tidone is the perfect place to experience a tailor-made getaway. Here, time slows down, and every moment is shaped by genuine hospitality, a warm sense of community, and a vibrant calendar of events happening all year round. Explore 20+ charming villages, each with its own story and pace. Follow over 30 scenic trails for trekking, biking, or horseback riding in the footsteps of ancient travelers. Taste the richness of 10+ local specialties—from DOP-cured meats to DOC wines. And with more than 100 cultural, food, and sports events throughout the year, there's always something to discover.</p>
+          <h4>L'area della Val Tidone</h4>
+          <h2>Godetevi un paesaggio mozzafiato in un'area vicina alla Toscana ricca di storia, percorsi di trekking e
+            degustazioni di vino</h2>
+          <p>Con i suoi borghi storici e i paesaggi naturali incontaminati,
+            L'Alta Val Tidone è il luogo ideale per vivere una fuga su misura.
+            Qui il tempo rallenta e ogni momento è scandito da un'ospitalità genuina,
+            un caldo senso di comunità e un vivace calendario di eventi che si svolgono tutto l'anno.
+            Esplorate gli oltre 20 incantevoli villaggi, ognuno con la sua storia e il suo ritmo. Seguite oltre 30
+            sentieri panoramici
+            sentieri panoramici per fare trekking, andare in bicicletta o a cavallo sulle orme degli antichi
+            viaggiatori.
+            Assaggiate la ricchezza di oltre 10 specialità locali, dai salumi DOP ai vini DOC.
+            E con più di 100 eventi culturali, gastronomici e sportivi durante l'anno, c'è sempre qualcosa da scoprire.
+          </p>
           <a href="#" class="btn btn-light">Scopri di più</a>
         </div>
-        <div class="image-below" style="background-image: url('assets/images/img-area.webp')"></div>
+        <div class="image-below" style="background-image: url('images/img-area.webp')" loading="lazy"></div>
       </section>
 
       <!-- Info Grid Section (4 columns) -->
       <section class="info-grid">
         <div class="info-item">
           <h3>Check-in & Check-out</h3>
-          <p>"Check-in is from 15:00–18:00. Late check-in is possible depending on availability and must be agreed upon prior to reservation.  
-            Check-out time is at 11:00. For your convenience, we provide a luggage storage service until 18:00 on the same day. Failure to vacate the room by the designated check-out time will incur a fee of 45 EUR per hour."</p>
+          <p>Il check-in si effettua dalle ore 15:00 alle 18:00. Il check-in tardivo è possibile in base alla
+            disponibilità e deve essere concordato prima della prenotazione.
+            Il check-out si effettua alle 11:00. Per vostra comodità, forniamo un servizio di deposito bagagli fino alle
+            18:00 del giorno stesso. La mancata liberazione della
+            camera entro l'orario di check-out stabilito comporta un addebito di 45 EUR all'ora.</p>
         </div>
         <div class="info-item">
-          <h3>Staircase and luggage</h3>
-          <p>La porta blu rooms are located on the ground and first floor. For those on the first floor the use of the stairs is required, there is no elevator. Rooms on the ground floor are equipped to host people with mobility issues or that use a wheelchair.</p>
+          <h3>Scale e valigie</h3>
+          <p>Le camere si trovano al piano terra e al primo piano. Per quelle al primo piano è richiesto l'uso delle
+            scale, non c'è ascensore.
+            Le camere al piano terra sono attrezzate per ospitare persone con problemi di mobilità o che utilizzano una
+            sedia a rotelle.</p>
         </div>
         <div class="info-item">
           <h3>WiFi</h3>
-          <p>All of our rooms have free wifi. There is also wifi in the common areas and courtyard.</p>
-          <h3>Parking</h3>
-          <p>Parking is available for free at laporta blu. Electric vehicle charging is also available.</p>
+          <p>Tutte le nostre camere sono dotate di wifi gratuito. C'è anche il wifi nelle aree comuni e nel cortile.</p>
+          <h3>Parcheggio</h3>
+          <p>Il parcheggio è disponibile gratuitamente presso laporta blu. È disponibile anche la ricarica dei veicoli
+            elettrici.</p>
+        </div>
+      </section>
+      <section class="info-grid-footer">
+        <div class="info-item">
+          <h2>La porta blu</h2>
+          <p class="small-text">Agriturismo in Alta Val Tidone</p>
+        </div>
+        <div class="info-item">
+          <h3>Posizione</h3>
+          <p class="small-text">Loc. Casa Forloni 1 <br>Alta Val Tidone (PC)<br>Italy</p>
+        </div>
+        <div class="info-item">
+          <h3>Contatti</h3>
+          <ul>
+            <li>
+              <a href="#" class="small-text">+39 390 490 9023</a>
+            </li>
+            <li>
+              <a href="#" class="small-text">welcome@laportablu.com</a>
+            </li>
+            <li>
+              <a href="#" class="small-text">instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-item">
+          <ul>
+            <li>
+              <a href="/privacypolicy.html" class="small-text">Privacy policy</a>
+            </li>
+            <li>
+              <a href="/cookiepolicy.html" class="small-text">Cookie policy</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
   </div>
 
+
   <!-- Mobile Bottom Nav -->
-<div class="mobile-nav">
-  <a href="#">La porta blu</a>
-  <a href="#" id="menuToggle">Menu</a>
-  <a href="#contact">Prenota</a>
-</div>
+  <div class="mobile-nav">
+    <a href="#" id="menuToggle">Menu</a>
+    <a href="#">La porta blu</a>
+    <a href="#contact">Prenota</a>
+  </div>
 
-<!-- Overlay Menu -->
-<div class="mobile-menu-overlay" id="mobileMenu">
-  <button class="close-btn" id="menuClose">×</button>
-  <nav>
-    <a href="#agriturismo">L'agriturismo</a>
-    <a href="#piscina">Giardino e piscina</a>
-    <a href="#stanze">Stanze e suite</a>
-    <a href="#area">L'Alta Val Tidone</a>
-    <a href="#contact">Contatti</a>
-  </nav>
-</div>
+  <div class="sticky-btn-top-mobile">
+    <a href="#agriturismo">↑</a>
+  </div>
 
-<script>
-  const toggleBtn = document.getElementById('menuToggle');
-  const closeBtn = document.getElementById('menuClose');
-  const overlay = document.getElementById('mobileMenu');
+  <!-- Overlay Menu -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <button class="close-btn" id="menuClose">×</button>
 
-  toggleBtn.addEventListener('click', () => {
-    overlay.classList.add('active');
-  });
+    <div class="menu-wrapper">
+      <nav class="top-menu">
+        <ul>
+          <li><a href="#">La porta blu</a></li>
+        </ul>
+      </nav>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#agriturismo" class="mobile-menu-link">Agriturismo</a></li>
+          <li><a href="#piscina" class="mobile-menu-link">Giardino e piscina</a></li>
+          <li><a href="#stanze" class="mobile-menu-link">Le nostre stanze</a></li>
+          <li><a href="#area" class="mobile-menu-link">L'area della Val Tidone</a></li>
+        </ul>
+      </nav>
 
-  closeBtn.addEventListener('click', () => {
-    overlay.classList.remove('active');
-  });
-</script>
+      <nav class="bottom-menu">
+        <ul>
+          <li><a href="#contact">Come arrivare</a></li>
+          <li><a href="#contact">Prenota</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/language.js" defer></script>
 </body>
+
 </html>
