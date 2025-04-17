@@ -247,7 +247,7 @@ a {
 }
 
 .sidebar nav ul,
-.sidebar-footer nav ul {
+.sidebar-footer nav ul, ul {
   list-style: none;
   padding-left: 0;
 }
